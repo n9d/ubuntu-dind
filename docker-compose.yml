@@ -1,0 +1,10 @@
+version: "3"
+services:
+  srv:
+    build:
+      context: ./
+    privileged: yes
+    volumes:
+      - .:/src
+    tty: true
+    working_dir: /src
